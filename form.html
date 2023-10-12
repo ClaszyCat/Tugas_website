@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/vendor/twbs/bootstrap/dist/assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Bagian Header -->
+      <div class="row">
+        <div class="col-md-12 header" id="site-header">
+          <!-- isi header -->
+          <header>
+            <h1 class="title-site">Belajar Bootstrap</h1>
+            <p class="description">
+              Belajar Membuat Template Website Dengan Bootstarp
+            </p>
+          </header>
+
+          <nav class="menus">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Portofolio</a></li>
+              <li><a href="form.html">Formulir</a></li>
+              <li><a href="database.html">Database</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 articles" id="site-content">
+          <!-- isi content -->
+          <h1>Form Pendaftaran</h1>
+          <form class="form-horizontal" role="form">
+            <div class="form-group form-group-lg">
+              <label class="col-sm-2 control-label" for="lg">Nama Depan</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="lg" />
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm"
+                >Nama Belakang</label
+              >
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="sm" />
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm">Email</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="email" id="sm" />
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm">Password</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="password" id="sm" />
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm"
+                >Tanggal Lahir</label
+              >
+              <div class="col-sm-10">
+                <input class="form-control" type="date" id="sm" />
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm">Alamat</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm"
+                >Jenis Kelamin</label
+              >
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optradio" /> Laki-Laki
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optradio" /> Perempuan
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm">Jurusan</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="sel1">
+                  <option>Teknik Informatika</option>
+                  <option>Teknik Elekto</option>
+                  <option>Teknik Sipil</option>
+                  <option>Teknik Industri</option>
+                  <option>Teknik Mesin</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group form-group-sm">
+              <label class="col-sm-2 control-label" for="sm">Hobi</label>
+              <div class="col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="optradio" /> Membaca
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="optradio" /> Olahraga
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="optradio" /> Kuliner
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-success">Kembali</button>
+            <button type="button" class="btn btn-warning">Reset</button>
+          </form>
+        </div>
+
+        <div class="col-md-4 sidebar" id="site-sidebar">
+          <!-- Isi content sidebar -->
+          <aside class="widgets">
+            <h3 class="widget-title">Menu</h3>
+            <ul>
+              <li><a href="#">Olahraga</a></li>
+              <li><a href="#">Politik</a></li>
+              <li><a href="#">Hiburan</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Sepakbola</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 footer" id="site-footer">
+          <!-- isi footer -->
+          <footer class="”copyright" text-center”>
+            <p>&copy; 2015 onphpid.com</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
